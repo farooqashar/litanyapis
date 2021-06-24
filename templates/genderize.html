@@ -1,0 +1,17 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Genderize</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://genderize.io/"><h2>Genderize.io API </h2></a>
+      <h4><div style="color:grey">Name:</div> {{name.capitalize()}}</h4>
+      <h4><div style="color:grey">Predicted Gender:</div> {{data["gender"].capitalize()}}</h4>
+      <h4><div style="color:grey">Predicted Gender Probability:</div> {{data["probability"]}}</h4>
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

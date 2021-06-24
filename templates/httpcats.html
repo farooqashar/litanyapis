@@ -1,0 +1,22 @@
+<!DOCType>
+<html>
+  <head>
+    <title>HTTP Cats</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://http.cat"><h2> HTTP Cats</h2></a>
+      
+      <h3>Cats For HTTP Response Status Codes</h3>
+
+      {%for i in request_urls%}
+      <img src="{{i}}" width="300px">
+      <br />
+      <br />
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

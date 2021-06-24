@@ -1,0 +1,23 @@
+<!DOCType>
+<html>
+  <head>
+    <title>MET</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://metmuseum.github.io/"><h2>Metropolitan Museum of Art Collection API</h2></a>
+      
+      <h3>MET Objects</h3>
+      {%for i in all_data%}
+      <img src="{{i["primaryImage"]}}" width="300px">
+      <h4>Object URL: <a target="_blank" href = 
+      {{i["primaryImage"]}}">{{i["objectURL"]}}</a></h4>
+      <h4>Object ID: {{i["objectID"]}}</h4>
+      <br />
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

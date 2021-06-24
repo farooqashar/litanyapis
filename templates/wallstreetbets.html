@@ -1,0 +1,24 @@
+<!DOCType>
+<html>
+  <head>
+    <title>WallstreetBets</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://dashboard.nbshare.io/apps/reddit/api/"><h2>WallstreetBets API</h2></a>
+      
+      <h3>WallstreetBets Reddit</h3>
+
+      {%for i in all_data%}
+      <h4><div style="color:grey">Ticker: {{i["ticker"]}}</div></h4>
+      <h5>Number of Comments: {{i["no_of_comments"]}}</h5>
+      <h5>Sentiment: {{i["sentiment"]}}</h5>
+      <h5>Sentiment Score: {{i["sentiment_score"]}}</h5>
+      <br />
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

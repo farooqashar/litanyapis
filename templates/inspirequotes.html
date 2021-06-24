@@ -1,0 +1,23 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Quotes</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://github.com/fisenkodv/dictum"><h2>Dictum API </h2></a>
+      
+      <h3>Quotes</h3>
+
+      {%for i in all_data%}
+      <h4>"{{i["text"]}}"</h4>
+      <h5><div style="color:grey">Author:</div>{{i["author"]}}</h5>
+      <br />
+      <br />
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

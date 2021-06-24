@@ -1,0 +1,49 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Open Library</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://openlibrary.org/developers/api"><h2>Open Library API</h2></a>
+      
+      <h2><div style="color:skyblue">Books</div></h2>
+      {%for i in all_data%}
+
+      <h3><div style="color:blue">{{i["title"]}}</div></h3>
+
+      <h4>
+      <div style="color:grey">Subjects:</div>
+      <br/>
+      {%for i in i["subject_people"]%} 
+      {{i}}
+      <br/>
+      {%endfor%} 
+
+      </h4>
+ 
+      <h4>
+      <div style="color:grey">Settings:</div>
+      <br/>
+      {%for i in i["subject_places"]%} 
+      {{i}}
+      <br/>
+      {%endfor%} 
+      </h4>
+
+      <h4>
+      <div style="color:grey">Topics:</div>
+      <br/>
+      {%for i in i["subjects"]%} 
+      {{i}}
+      <br/>
+      {%endfor%} 
+      </h4>
+
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

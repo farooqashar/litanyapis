@@ -1,0 +1,34 @@
+<!DOCType>
+<html>
+  <head>
+    <title>UK Bank Holidays</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://www.gov.uk/bank-holidays.json"><h2>UK Bank Holidays API</h2></a>
+      
+      <h3>Bank Holidays</h3>
+
+      <h3><div style="color:skyblue">England and Wales</div></h3>
+
+      {%for i in england_wales_holidays%}
+      <h4>{{i}}</h4>
+      {%endfor%}
+
+      <h3><div style="color:skyblue">Scotland</div></h3>
+
+      {%for i in scotland_holidays%}
+      <h4>{{i}}</h4>
+      {%endfor%}
+
+      <h3><div style="color:skyblue">Northern Ireland</div></h3>
+
+      {%for i in northern_ireland_holidays%}
+      <h4>{{i}}</h4>
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

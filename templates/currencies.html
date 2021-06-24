@@ -1,0 +1,22 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Currencies</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://github.com/fawazahmed0/currency-api#readme"><h2>Currency API</h2></a>
+      
+      <h3>Exchange Rates for {{currency.upper()}} as of 
+      {{all_data["date"]}}</h3>
+
+      {%for i in all_data[currency]%}
+      <h4><div style="color:grey">{{i.upper()}}:</div> {{all_data[currency][i]}}</h4>
+      <h5></h5>
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

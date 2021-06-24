@@ -1,0 +1,23 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Anime Quotes</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://github.com/RocktimSaikia/anime-chan"><h2>Animechan API </h2></a>
+      
+      <h3>Anime Quotes</h3>
+      {%for i in all_data%}
+      <h4>"{{i["quote"]}}"</h4>
+      <h5><div style="color:grey">Anime:</div>{{i["anime"]}}</h5>
+      <h5><div style="color:grey">Character:</div>{{i["character"]}}</h5>
+      <br />
+      <br />
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

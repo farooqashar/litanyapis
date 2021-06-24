@@ -1,0 +1,19 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Dog-Facts</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://dukengn.github.io/Dog-facts-API/"><h2> Dog-Facts API </h2></a>
+      
+      <h3>Dog Facts</h3>
+      {%for i in all_dog_facts%}
+      <h4>{{i}}</h4>
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

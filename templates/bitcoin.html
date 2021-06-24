@@ -1,0 +1,25 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Bitcoin Charts</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://bitcoincharts.com/about/exchanges/"><h2>BitcoinCharts API</h2></a>
+      
+      <h3>Bitcoin Currency Weights</h3>
+
+      {%for i in all_data%}
+      <h4><div style="color:grey">{{i}}</div></h4>
+
+        {%for j in all_data[i]%}
+        <h5>{{j}} : {{all_data[i][j]}}</h5>
+        {%endfor%}
+
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

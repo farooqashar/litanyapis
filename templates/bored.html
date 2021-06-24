@@ -1,0 +1,22 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Activities</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://agify.io/"><h2>Bored API </h2></a>
+ 
+        <h4>Activities To Do When Bored<h4>
+        {%for i in activities_data%}
+        <h5><div style="color:grey">Activity:</div> {{i["activity"]}}</h5>
+        <h5>Type: {{i["type"].capitalize()}}</h5>
+        <h5>Participants: {{i["participants"]}}</h5>
+        <h5>Price: {{i["price"]}}</h5>
+        {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCType>
+<html>
+  <head>
+    <title>URL Scan</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://urlscan.io/about-api/"><h2> URLScan.io API </h2></a>
+      <h4>URL: <a target="_blank" href = "{{python_dict["data"]["requests"][2]["request"]['documentURL']}}">{{python_dict["data"]["requests"][2]["request"]['documentURL']}}</a></h4>
+
+      <h4>Verdict: <div style="color:blue">{{verdict}} </div></h4>
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>
+

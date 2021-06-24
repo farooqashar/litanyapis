@@ -1,0 +1,19 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Cat-Facts</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://alexwohlbruck.github.io/cat-facts/"><h2> Cat-Facts API </h2></a>
+      
+      <h3>Cat Facts</h3>
+      {%for i in all_cat_facts%}
+      <h4>{{i}}</h4>
+      {%endfor%}
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>

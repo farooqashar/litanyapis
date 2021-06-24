@@ -1,0 +1,75 @@
+
+.title {
+  color: crimson;
+  animation-name: title_alert;
+  animation-duration: 20s;
+}
+
+@keyframes title_alert {
+  from {color: red;}
+  to {color: yellow;}
+  to {color:blue;}
+}
+
+.subtitle {
+  color: crimson;
+  animation-name: sub_title_alert;
+  animation-duration: 20s;
+}
+
+@keyframes sub_title_alert {
+  from {color: brown;}
+  to {color:darkorange;}
+  to {color:lightseagreen;}
+}
+
+.button {
+  border: none;
+  color: red;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+h2 {
+  color: dimgray;
+}
+
+h3 {
+  color: brown;
+}
+
+h4 {
+  color:black;
+}
+
+a {
+  color: darksalmon;
+}
+
+a:link {
+  color: darkred;
+}
+
+a:visited {
+  color: darkgreen;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  color: blue;
+}
+
+body {
+  background-color: lightcyan;
+  font-family: times;
+}
+

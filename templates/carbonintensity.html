@@ -1,0 +1,18 @@
+<!DOCType>
+<html>
+  <head>
+    <title>Carbon Intensity</title>
+    <link type="text/css" rel="stylesheet" href="static/style.css/">
+  </head>
+  <body>
+    <center>
+      <a target="_blank" href="https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v1-0-0"><h2>UK Carbon Intensity API</h2></a>
+      <h4>From: {{data["data"][0]["from"]}}</h4>
+      <h4>To: {{data["data"][0]["to"]}}</h4>
+
+      <h4><div style="color:grey">Index:</div>{{data["data"][0]["intensity"]["index"].capitalize()}}</h4>
+
+      <a href="/"><button class = "button">Go Back</button></a>
+    </center>
+  </body>
+</html>
