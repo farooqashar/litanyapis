@@ -15,6 +15,10 @@ app = Flask(
 def home():
   return render_template('index.html')
 
+@app.route('/404')
+def error():
+  return render_template('404.html')
+
 @app.route('/nasa')
 def mars():
   response = requests.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=faRn6vfvjvAmibI3UeuCfdYb3S4BFBP7rAPSfsu2")
